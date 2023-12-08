@@ -8,6 +8,10 @@
   <!-- 1. 引入 bootstarp.css 使用樣式 -->
   <link rel="stylesheet" href="./css/bootstrap.css">
   <style>
+    .pt-8 {
+  padding-top: 7.5rem !important;
+}
+
     #ho .btn-close {
       filter: invert(100);
     }
@@ -142,7 +146,7 @@
   <div class="section02">
     <div class="container align-items-center justify-content-center m-auto" style="height: 100%; display: flex;">
       <div class="row">
-        <div class="col col-xl-4 col-md-6 col-12 mt-3">
+        <div class="col col-xl-4 col-12 mt-3">
           <div class="card">
             <img src="https://picsum.photos/300/150/?random=1" class="card-img-top">
             <div class="card-body">
@@ -153,9 +157,9 @@
             </div>
           </div>
         </div>
-        <div class="col col-xl-4 col-md-6 col-12 mt-3">
+        <div class="col col-xl-4 col-12 mt-3">
           <div class="card">
-            <img src="https://picsum.photos/300/150/?random=1" class="card-img-top">
+            <img src="https://picsum.photos/300/150/?random=2" class="card-img-top">
             <div class="card-body">
               <h4>定義解決。</h4>
               <p class="card-text">
@@ -164,9 +168,9 @@
             </div>
           </div>
         </div>
-        <div class="col col-xl-4 col-md-6 col-12 mt-3 mb-3">
+        <div class="col col-xl-4 col-12 mt-3 mb-3">
           <div class="card">
-            <img src="https://picsum.photos/300/150/?random=1" class="card-img-top">
+            <img src="https://picsum.photos/300/150/?random=3" class="card-img-top">
             <div class="card-body">
               <h4>定義解決。</h4>
               <p class="card-text">
@@ -228,13 +232,107 @@
     </div>
   </div>
 
+  <!-- 表單 -->
   <div class="section06 bg-light">
-    <h1>聯絡我們</h1>
-    <p>泰山咖啡莊園，傳承熱情 coding 精神</p>
-    <p>任何服務問題或建議，歡迎您透過客服表單告訴我們，謝謝!</p>
+    <div class="container text-center">
+      <h1 class="pt-8">聯絡我們</h1>
+      <p class="fs-4">泰山咖啡莊園，傳承熱情 coding 精神</p>
+      <p>任何服務問題或建議，歡迎您透過客服表單告訴我們，謝謝!</p>
+      <form class="row g-3 needs-validation" novalidate>
+          <div class="col text-start col-lg-6 col-12">
+            <label class="form-label">姓名</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control">
+              <div class="input-group-text">
+                先生<input class="form-check-input mt-0 me-2" type="radio" value="" name="sex">
+                女士<input class="form-check-input mt-0" type="radio" value="" name="sex">
+              </div>
+            </div>
+          </div>
+        <div class="col text-start col-lg-6 col-12">
+          <label class="form-label">電話</label>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control">
+  
+          </div>
+        </div>
+          <div class="col col-lg-6 col-12 text-start">
+            <div class="mb-3">
+              <label  class="form-label">電子信箱</label>
+              <input type="email" class="form-control">
+            </div>
+          </div>
+          <div class="col col-lg-6 col-12 text-start">
+            <label class="form-label">問題類型</label>
+            <select class="form-select">
+              <option selected>餐飲建議</option>
+              <option value="1">服務品質</option>
+              <option value="2">環境滿意度</option>
+              <option value="3">其他</option>
+            </select>
+          </div>
+          <div class="col col-12 text-start">
+            <div class="mb-3">
+              <label class="form-label">意見需求</label>
+              <textarea class="form-control"  rows="6"></textarea>
+            </div>
+          </div>
+          <div class="col text-start">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="information">
+              <label class="form-check-label" for="information">
+                訂閱泰山莊園最新資訊
+              </label>
+            </div>
+            <div class="col-12 text-center">
+              <button class="btn btn-secondary" type="submit">送出</button>
+            </div>
+          </div>
+      </form>
+    </div>
 
   </div>
 
+
+  <section class="section07 w-100 h-50 bg-dark">
+    <div class="container p-5 text-light">
+      <div class="row lh-sm">
+        <div class="col-6 col-lg-3">
+          <img src="https://picsum.photos/200/200/?random=10" class="rounded-circle w-50">
+        </div>
+        <div class="col-6 col-lg-3 pt-5 pt-lg-0">
+          <p class="fw-bolder">Address</p>
+          <p>
+            1234 Street Name
+            <br>
+            City,AA 99999
+          </p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <p class="fw-bolder">Links</p>
+          <p>
+            Website builder
+            <br>
+            Download for Windows
+            <br>
+            Download for Mac
+          </p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <p class="fw-bolder">Contacts</p>
+          <p>
+            Email:support@mobirise.com
+            <br>
+            Phone:+1 (0) 000 0000 001
+            <br>
+            Fax:+1 (0) 000 000 002
+        </div>
+        <div class="col-12 text-center">
+          &copy;Copyright 2023 I-Ping Ho - All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- 2. 引入 bootstrap.bundle.js 才可以使用元件 -->
   <script src="./js/bootstrap.bundle.js"></script>
 </body>
